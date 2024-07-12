@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --azul-claro: #28D4FD;
+    --hover-botton-nav: #22D48D;
+    --hover-btton-redeSocial: #272727;
+}
+* {
+    margin: 0px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.body {
+    height: 100vh;
+    background-color: #000;
+    position: relative;
+}
+.header {
+    padding: 2% 15%;
+}
+.nav {
+    display: flex;
+    gap: 80px;
+}
+.botton_Nav {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--azul-claro);
+}
+.botton_Nav:hover {
+    color: var(--hover-botton-nav);
+}
+.caixaMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 11%;
+    box-sizing: border-box;
+    padding: 5% 15%;
+    height: auto;
+}
+.parteTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 60%;
+}
+.tituloConteudo {
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff
+}
+.destaquetitulo {
+    color: var(--azul-claro);
+}
+.texto {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff
+}
+.areaBotao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 32px;
+}
+.subTitulos__redesSociais {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+    color: #fff;
+}
+.botao__RedeSociais {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 80%;
+    border: var(--azul-claro) solid 2px;
+    color: #fff;
+    padding: 16px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+.botao__RedeSociais:hover {
+    background-color: var(--hover-btton-redeSocial);
+}
+.imagemPagina {
+    width: 330px;
+}
+.footer {
+    background-color: var(--azul-claro);
+}
+.conteudo_RodaPe {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+    font-size: 1.5rem;
+    padding: 24px 0;
+    text-align: center;
+}
+
+@media( max-width: 1300px ) {
+    .header {
+        display: flex;
+        justify-content: center;
+        padding: 12% 5%;
+    }
+    .caixaMain {
+        padding: 10% 5%;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1px;
+        flex-direction: column-reverse;
+    }
+    .parteTexto {
+        margin-top: 15%;
+        width: auto;
+    }
+    .tituloConteudo {
+        width: 100%;
+        text-align: center;
+    }
+    .imagemPagina {
+        width: 280px;
+        height: 370px;
+    }
+} 
